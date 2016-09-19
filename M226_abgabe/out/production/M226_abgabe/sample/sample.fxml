@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<Pane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Accordion layoutY="93.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="307.0" prefWidth="600.0">
+        <panes>
+          <TitledPane animated="false" prefHeight="204.0" prefWidth="600.0" text="Bubblesort">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="Bubble" layoutX="267.0" layoutY="138.0" mnemonicParsing="false" text="Button" />
+                        <Label fx:id="LabelA" layoutX="128.0" layoutY="52.0" prefHeight="21.0" prefWidth="391.0" text="Current_A" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </TitledPane>
+          <TitledPane animated="false" text="Min / Max">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="minMax" layoutX="104.0" layoutY="113.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="69.0" text="Min" />
+                        <Label fx:id="LabelB" layoutX="138.0" layoutY="62.0" prefHeight="21.0" prefWidth="391.0" text="Current_A" />
+                        <Button fx:id="MinMax2" layoutX="432.0" layoutY="120.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="69.0" text="Max" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </TitledPane>
+          <TitledPane animated="false" text="Umgekehrt">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="reverse" layoutX="267.0" layoutY="138.0" mnemonicParsing="false" text="Button" />
+                        <Label fx:id="LabelC" layoutX="104.0" layoutY="58.0" prefHeight="21.0" prefWidth="391.0" text="Current_A" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </TitledPane>
+        </panes>
+      </Accordion>
+      <Label layoutX="100.0" layoutY="21.0" prefHeight="21.0" prefWidth="436.0" text="Geben sie eine Zahlenkette ein. (Format : 10 20 33 000 222)" />
+      <TextField fx:id="userInput" layoutX="113.0" layoutY="53.0" prefHeight="31.0" prefWidth="377.0" />
+      <Button fx:id="submit" layoutX="504.0" layoutY="53.0" mnemonicParsing="false" text="Button" />
+   </children>
+</Pane>
